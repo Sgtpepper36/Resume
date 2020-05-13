@@ -1,0 +1,247 @@
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+<body>
+<style>
+@media screen and (min-width: 770px) {
+/* start of large tablet styles */
+  body {
+    font-size: 100%;
+    
+  }
+  img{
+    max-height: 100px;
+  }
+}
+
+
+@media screen and (max-width: 770px) {
+/* start of phone styles */
+  body {
+    font-size: 100%;
+  }
+    img{
+    max-height: 100px;
+  }
+}
+body {
+  margin: 0;
+}
+#container {
+  display:grid;
+  grid-template-row: auto auto auto auto auto auto
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding-bottom: 10px;
+  grid-gap: 0px;
+}
+#header {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2,minmax(20vw,50vw));
+  background-color: black;
+  align-items: center;
+  width: 100%;
+}
+#info {
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  align-items: center;
+  color: white;
+}
+#name {
+  font-size: 150%;
+
+}
+
+#icon {
+  
+  justify-self: end;
+  padding-right: 10px;
+}
+img {
+object-fit: contain;
+  max-height: 150px;
+}
+#objective {
+  display: grid;
+  grid-teplate-rows: repeat(1fr);
+  padding: 0px 10px;
+}
+#skills{
+  padding: 0px 10px;
+}
+#skills-list {
+      display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  grid-gap: 10px;
+  
+}
+
+.skill {
+  border-radius: 25px;
+  background: black;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  height: 20px;
+}
+#experience{
+  padding: 0px 10px;
+  display: grid;
+  grid-template columns: repeat(3,auto);
+}
+#jobs {
+  display: grid;
+  grid-template-rows: repeat(3,auto);
+}
+#projects {
+  padding: 0 10px;
+}
+#education{
+  padding: 0 10px;
+}
+#certs {
+    display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+}
+.cert{
+padding: 0 10px;
+  display:grid;
+  grid-template-rows: repeat(3,1fr)
+}
+</style>
+<div id="container">
+  <div id="header">
+    <div id="info">
+      <div id="name"><span><b>Joey Granger</b></span></div>
+        <div><span>Phone: 757-593-3590</span></div>
+      <div><span>Email: joey.granger@protonmail.com</span></div>
+    </div>
+    <div id="icon">
+      <div>
+        <img src="https://www.dropbox.com/s/oz3t5wzxn1i89wy/headshot_icon.png?raw=1" alt="">
+      </div>
+    </div>
+  </div>
+  <div id="objective">
+    <div><h2>Professional Summary</h2></div>
+    <div><ul>
+      <li>9 years of experience in a broad range of technology focused roles</li>
+      <li>Proficient full-stack developer with experience in the Microsoft stack of technologies, including: MSSQL, .NET, and IIS</li>
+      <li>Specializes in integrating 3rd party disparate systems with core company software</li>
+      <li>Extensive background in managing software, infrastructure, and network projects</li>
+    </ul>
+    </div>
+  </div>
+  <div id="skills">
+    <h2>Skills</h2>
+    <div id="skills-list">
+      <div class="skill">.NET</div>
+      <div class="skill">MSSQL</div>
+      <div class="skill">C#</div>
+	  <div class="skill">Visual Studio</div>
+	  <div class="skill">Visual Studio Code</div>
+      <div class="skill">Team Foundation</div>
+      <div class="skill">Git</div>
+      <div class="skill">NodeJS</div>
+      <div class="skill">HTML5/CSS/Javascript</div>
+      <div class="skill">MS Windows Server</div>
+	  <div class="skill">IIS</div>
+	  <div class="skill">MS Active Directory</div>
+      <div class="skill">Powershell</div>
+      <div class="skill">JunOS</div>
+    </div>
+  </div>
+  <div id="experience">
+    <div>
+      <h2>Experience</h2>
+    </div>
+    <div id="jobs">
+      <div class="job">
+        <div>
+          <h3>Application Developer Integrator</h3>
+        </div>
+        <div>
+          <h4> Goldkey PHR | Virginia Beach, VA | Jan 2020 to Present</h4>
+        </div>
+        <div>
+          <ul>
+            <li>Work with customers to scope and develop custom business applications that improve productivity and eliminate existing inefficiencies</li>
+            <li>Develop services that integrate 3rd party applications into core company software</li>
+            <li>Research and identify 3rd party applications that fit business needs</li>
+            <li>Manage large scale software implementation projects</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div>
+          <h3>IT Project Manager</h3>
+        </div>
+        <div>
+          <h4> Goldkey PHR | Virginia Beach, VA | July 2014 to Jan 2020</h4>
+        </div>
+        <div>
+          <ul>
+            <li>Identify, scope, and budget potential IT projects for hotels, restaurants, and corporate business customers</li>
+            <li>Manage small to large projects from research to completion </li>
+            <li>Coordinate and lead regular stakeholder meetings</li>
+            <li>Recruit and manage IT resources from internal IT staffing and 3rd party technology partners</li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div>
+          <h3>Support Technician</h3>
+        </div>
+        <div>
+          <h4> Goldkey PHR | Virginia Beach, VA | August 2011 to July 2014</h4>
+        </div>
+        <div>
+          <ul>
+            <li>Troubleshoot a wide range of end user issues, including desktop hardware, telephony, application, and network</li>
+            <li>Coordinate and manage small projects such as end user hardware refreshes</li>
+            <li>Assist IT leadership with large project related tasks</li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="projects">
+    <h2>Key Projects</h2>
+    <ul>
+      <li>Developed windows service that integrates 3rd party cloud-based purchasing system with internal Microsoft Dynamics SL Accounting software</li>
+      <li>Developed .NET web application to manage companywide vendor data and integrated with accounting system</li>
+      <li>Developed parking management software for tracking garage parking overages. Created custom reports that joined custom application data with 3rd party parking systems data for visualizing parking overage trends and calculate amount to charge pre-purchase customers</li>
+      <li>Managed project to implement new e-procurement and inventory system for all Hotel, restaurant, and corporate customers</li>
+      <li>Managed all technology items on Cavalier Historic renovation. Scoped, budgeted, and implemented network, structured cabling, PMS, POS, wireless infrastructure, and many other business systems</li>
+    </ul>
+  </div>
+  <div id="education">
+    <h2>Education</h2>
+    <div id="certs">
+      <div class="cert">
+        <div><h4>B.S Software Development</h4></div>
+        <div><span>Western Governors University</span></div>
+        <div><span>Expected Completion: Aug 2020</span></div>
+      </div>
+      <div class="cert">
+        <div><h4>A.A.S Information Technology</h4></div>
+        <div><span>Tidewater Community College</span></div>
+        <div><span>Completed: 2013</span></div>
+      </div>
+      <div class="cert">
+        <div><h4>CAPM</h4></div>
+        <div><span>Project Management Institute</span></div>
+        <div><span>Completed: 2014</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
